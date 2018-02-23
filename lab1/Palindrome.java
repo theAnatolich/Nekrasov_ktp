@@ -5,10 +5,8 @@ public class Palindrome
             
         for (int i = 0; i < args.length; i++)
             {
-             String s= args[i];
-             String p=reverseString(s);  
-        if(isPalindrome(s,p)) System.out.println("yes");
-        System.out.println("no");
+             String s= args[i];       
+        System.out.println(isPalindrome(s));
             }
         }
     public static String reverseString(String s) 
@@ -17,14 +15,15 @@ public class Palindrome
         for (int i = 0; i < s.length(); i++)
             {
             p+=s.charAt(s.length()-i-1);
+		
             }
-      
+      System.out.println(p);
         return p;
      }
-     public static boolean isPalindrome(String s,String p)
+     public static boolean isPalindrome(String s)
      {
-        
-        if(s.equals(p))  return false;
+        String p=reverseString(s);
+        if(!s.equals(p))  return false;
         return true;
         
      }
