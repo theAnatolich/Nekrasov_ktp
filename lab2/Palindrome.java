@@ -17,8 +17,7 @@ public class Palindrome
             p+=s.charAt(s.length()-i-1);
 		
             }
-      System.out.println(p);
-        return p;
+       return p;
      }
      public static boolean isPalindrome(String s)
      {
