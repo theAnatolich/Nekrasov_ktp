@@ -23,11 +23,7 @@ public class AStarState
         return map;
     }
 
-    public int numOpenWaypoints()
-    {
-        return openWaypoints.size();
-    }
-
+   
     public Waypoint getMinOpenWaypoint()
     {
         Waypoint ptrCost = null;  
