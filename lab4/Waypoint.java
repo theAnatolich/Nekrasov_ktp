@@ -94,4 +94,3 @@ public class Waypoint
         return prevCost + remainingCost;
     }
 }
-
