@@ -23,6 +23,8 @@ public class Location
     {
         this(0, 0);
     }
+
+//функция для сравнения точек
     public boolean equals(Object obj) 
     { 
 	if (obj == null) {
@@ -31,7 +33,6 @@ public class Location
 
 	if (obj instanceof Location) 
         {
-            // Cast other object to Point3d type, then compare. 
             Location other = (Location) obj; 
             
             if (xCoord == other.xCoord && 
@@ -44,11 +45,10 @@ public class Location
         return false; 
     }
     
+    //подсчет хешкода
     public int hashCode() 
     { 
-        int result = 17; // Some prime value 
-        
-       // Use another prime value to combine 
+        int result = 17; 
         result = 9 * result + (xCoord * 8); 
         result = 14 * result + (yCoord * 10); 
         
